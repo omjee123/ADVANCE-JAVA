@@ -1,0 +1,26 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: LibraryMannagementSystem
+
+# ===================== ORACLE DB =====================
+  oracle:
+    datasource:
+      url: jdbc:oracle:thin:@localhost:1521:xe
+      username: SYSTEM
+      password: omjee123
+      driver-class-name: oracle.jdbc.OracleDriver
+
+# ===================== MYSQL DB =====================
+  mysql:
+    datasource:
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: 31082002
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+#    hikari:
+#      maximum-pool-size: 10
+#      minimum-idle: 2

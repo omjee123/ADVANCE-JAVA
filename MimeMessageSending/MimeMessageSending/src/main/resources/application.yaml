@@ -1,0 +1,36 @@
+server:
+  port: 8185
+
+spring:
+  application:
+    name: MimeMessageSending
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jeeom30@gmail.com
+    password: clewidfquffpxmda
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+mail:
+  imap:
+    host: imap.gmail.com
+    port: 993
+    user: jeeom30@gmail.com
+    password: clewidfquffpxmda
+    protocol: imaps
+    ssl-enable: true
+
+
+    folders:
+      - "INBOX"
+      - "[Gmail]/Spam"
+      - "[Gmail]/Drafts"
+      - "[Gmail]/Sent Mail"
+      - "[Gmail]/Trash"

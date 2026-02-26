@@ -1,0 +1,26 @@
+server:
+  port: 8183
+
+spring:
+  application:
+    name: MailSending
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jeeom30@gmail.com
+    password: clewidfquffpxmda
+
+
+mail:
+  imap:
+    host: imap.gmail.com
+    username: jeeom30@gmail.com
+    password: clewidfquffpxmda
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
